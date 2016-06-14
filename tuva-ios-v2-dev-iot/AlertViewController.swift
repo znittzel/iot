@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class ThirdViewController : UITableViewController {
+class AlertViewController : UITableViewController {
     var devices = [Device]()
     var deviceNotifications = [Device: [DeviceNotification]]()
     var handler = MasterEventHandler()
@@ -22,8 +22,12 @@ class ThirdViewController : UITableViewController {
         
         // Refresh Control
         self.refreshControl = UIRefreshControl()
-        self.refreshControl!.addTarget(self, action: #selector(ThirdViewController.loadData), forControlEvents: UIControlEvents.ValueChanged)
+        self.refreshControl!.addTarget(self, action: #selector(AlertViewController.loadData), forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(self.refreshControl!)
+        
+        // Fetch data
+        self.loadData()
+        self.refreshControl!.beginRefreshing()
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,10 +37,6 @@ class ThirdViewController : UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        // Fetch data
-        self.loadData()
-        self.refreshControl!.beginRefreshing()
     }
     
     func loadData() {

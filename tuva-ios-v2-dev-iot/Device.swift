@@ -21,14 +21,16 @@ class Device : Hashable {
     var deviceId : String
     var name: String
     var owner: User
+    var type: String
     
     var hashValue: Int
     
-    init(objectId: String, deviceId: String, name: String, owner: User) {
+    init(objectId: String, deviceId: String, name: String, owner: User, type: String) {
         self.hashValue = objectId.hashValue
         self.objectId = objectId
         self.deviceId = deviceId
         self.name = name
         self.owner = owner
+        self.type = type
     }
 }

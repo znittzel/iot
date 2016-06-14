@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1A3572581D09CE07008BB217 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3572571D09CE07008BB217 /* AppDelegate.swift */; };
-		1A35725A1D09CE07008BB217 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3572591D09CE07008BB217 /* FirstViewController.swift */; };
-		1A35725C1D09CE07008BB217 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35725B1D09CE07008BB217 /* SecondViewController.swift */; };
 		1A35725F1D09CE07008BB217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A35725D1D09CE07008BB217 /* Main.storyboard */; };
 		1A3572611D09CE07008BB217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3572601D09CE07008BB217 /* Assets.xcassets */; };
 		1A3572641D09CE07008BB217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3572621D09CE07008BB217 /* LaunchScreen.storyboard */; };
@@ -26,20 +24,21 @@
 		1A3572801D09CF36008BB217 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A35727F1D09CF36008BB217 /* libz.tbd */; };
 		1A3572821D09CF46008BB217 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3572811D09CF46008BB217 /* libsqlite3.tbd */; };
 		1A3572841D09D67C008BB217 /* DeviceNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3572831D09D67C008BB217 /* DeviceNotificationTableViewCell.swift */; };
-		1A3572861D09D809008BB217 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3572851D09D809008BB217 /* ThirdViewController.swift */; };
+		1A3572861D09D809008BB217 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3572851D09D809008BB217 /* AlertViewController.swift */; };
 		1A3572881D09EB7F008BB217 /* DeviceNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3572871D09EB7F008BB217 /* DeviceNotification.swift */; };
 		1A35728A1D09EFB2008BB217 /* EventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3572891D09EFB2008BB217 /* EventHandler.swift */; };
 		1A35728C1D09EFD9008BB217 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35728B1D09EFD9008BB217 /* Device.swift */; };
 		1A35728E1D09F02E008BB217 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35728D1D09F02E008BB217 /* User.swift */; };
 		1A3598E11D0AA838001A4A76 /* TuvaTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3598E01D0AA838001A4A76 /* TuvaTools.swift */; };
 		1A3598E31D0ACC3B001A4A76 /* DeviceNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3598E21D0ACC3B001A4A76 /* DeviceNotificationViewController.swift */; };
+		1A45D9BB1D1034FA0050252D /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45D9BA1D1034FA0050252D /* DeviceViewController.swift */; };
+		1A45D9BD1D10356E0050252D /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45D9BC1D10356E0050252D /* DeviceTableViewCell.swift */; };
+		1A45D9BF1D10495C0050252D /* AddDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A45D9BE1D10495C0050252D /* AddDeviceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A3572541D09CE07008BB217 /* tuva-ios-v2-dev-iot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tuva-ios-v2-dev-iot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3572571D09CE07008BB217 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A3572591D09CE07008BB217 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		1A35725B1D09CE07008BB217 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1A35725E1D09CE07008BB217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A3572601D09CE07008BB217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A3572631D09CE07008BB217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,13 +56,16 @@
 		1A35727F1D09CF36008BB217 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1A3572811D09CF46008BB217 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		1A3572831D09D67C008BB217 /* DeviceNotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceNotificationTableViewCell.swift; sourceTree = "<group>"; };
-		1A3572851D09D809008BB217 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		1A3572851D09D809008BB217 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		1A3572871D09EB7F008BB217 /* DeviceNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceNotification.swift; sourceTree = "<group>"; };
 		1A3572891D09EFB2008BB217 /* EventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHandler.swift; sourceTree = "<group>"; };
 		1A35728B1D09EFD9008BB217 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		1A35728D1D09F02E008BB217 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A3598E01D0AA838001A4A76 /* TuvaTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuvaTools.swift; sourceTree = "<group>"; };
 		1A3598E21D0ACC3B001A4A76 /* DeviceNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceNotificationViewController.swift; sourceTree = "<group>"; };
+		1A45D9BA1D1034FA0050252D /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		1A45D9BC1D10356E0050252D /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		1A45D9BE1D10495C0050252D /* AddDeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDeviceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +137,10 @@
 		1A3598E51D0ADCC2001A4A76 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1A3572591D09CE07008BB217 /* FirstViewController.swift */,
-				1A35725B1D09CE07008BB217 /* SecondViewController.swift */,
-				1A3572851D09D809008BB217 /* ThirdViewController.swift */,
+				1A3572851D09D809008BB217 /* AlertViewController.swift */,
 				1A3598E21D0ACC3B001A4A76 /* DeviceNotificationViewController.swift */,
+				1A45D9BA1D1034FA0050252D /* DeviceViewController.swift */,
+				1A45D9BE1D10495C0050252D /* AddDeviceViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				1A3572831D09D67C008BB217 /* DeviceNotificationTableViewCell.swift */,
+				1A45D9BC1D10356E0050252D /* DeviceTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -252,15 +255,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A3572841D09D67C008BB217 /* DeviceNotificationTableViewCell.swift in Sources */,
+				1A45D9BD1D10356E0050252D /* DeviceTableViewCell.swift in Sources */,
 				1A3598E11D0AA838001A4A76 /* TuvaTools.swift in Sources */,
 				1A35728A1D09EFB2008BB217 /* EventHandler.swift in Sources */,
-				1A35725C1D09CE07008BB217 /* SecondViewController.swift in Sources */,
+				1A45D9BF1D10495C0050252D /* AddDeviceViewController.swift in Sources */,
 				1A3598E31D0ACC3B001A4A76 /* DeviceNotificationViewController.swift in Sources */,
 				1A3572881D09EB7F008BB217 /* DeviceNotification.swift in Sources */,
-				1A3572861D09D809008BB217 /* ThirdViewController.swift in Sources */,
+				1A45D9BB1D1034FA0050252D /* DeviceViewController.swift in Sources */,
+				1A3572861D09D809008BB217 /* AlertViewController.swift in Sources */,
 				1A35728E1D09F02E008BB217 /* User.swift in Sources */,
 				1A3572581D09CE07008BB217 /* AppDelegate.swift in Sources */,
-				1A35725A1D09CE07008BB217 /* FirstViewController.swift in Sources */,
 				1A35728C1D09EFD9008BB217 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

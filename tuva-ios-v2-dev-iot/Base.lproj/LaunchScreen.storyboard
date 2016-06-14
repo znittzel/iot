@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,32 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tuva-icon" translatesAutoresizingMaskIntoConstraints="NO" id="XpX-1R-epj">
-                                <rect key="frame" x="148" y="294" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="II1-xO-wOZ"/>
-                                    <constraint firstAttribute="height" constant="80" id="YNe-DV-TaS"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="XpX-1R-epj">
+                                <rect key="frame" x="60" y="206" width="256" height="256"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fx7-PA-cMb">
-                                <rect key="frame" x="131" y="382" width="113" height="17"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="TUVA || IOT">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name="Courier"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="XpX-1R-epj" secondAttribute="bottom" constant="270" id="8kk-0h-pyV"/>
                             <constraint firstItem="XpX-1R-epj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="M8v-3S-yKk"/>
-                            <constraint firstItem="Fx7-PA-cMb" firstAttribute="top" secondItem="XpX-1R-epj" secondAttribute="bottom" constant="8" id="TBz-r5-cl2"/>
-                            <constraint firstItem="Fx7-PA-cMb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dSH-Pm-nqx"/>
                             <constraint firstItem="XpX-1R-epj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="l3i-hv-DP9"/>
                         </constraints>
                         <variation key="default">
@@ -59,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tuva-icon" width="60" height="60"/>
+        <image name="Launch" width="256" height="256"/>
     </resources>
 </document>

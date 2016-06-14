@@ -39,7 +39,7 @@ class TuvaTools {
         var device: Device?
         if let pfOwner = pfObject.objectForKey("owner") {
             if let owner = __createUserFromPFObject(pfOwner as! PFObject) {
-                device = Device(objectId: pfObject.objectId!, deviceId: pfObject.valueForKey("deviceId") as! String, name: pfObject.valueForKey("name") as! String, owner: owner)
+                device = Device(objectId: pfObject.objectId!, deviceId: pfObject.valueForKey("deviceId") as! String, name: pfObject.valueForKey("name") as! String, owner: owner, type: "")
             }
         }
         
@@ -131,5 +131,26 @@ class TuvaTools {
             }
         }
         
+    }
+    
+    /******************************** OTHER HELPERS ***************************************/
+    
+    static func device_get_image_by_type(device: Device) -> UIImage {
+        var return_value = UIImage()
+        switch device.type {
+        case "camera":
+            return_value = UIImage(named: "Camera")!
+            break
+        case "sensor-motion":
+            return_value = UIImage(named: "Sensor-Motion")!
+            break
+        case "sensor-door":
+            return_value = UIImage(named: "Sensor-Door")!
+            break
+        default:
+            break
+        }
+        
+        return return_value
     }
 }
